@@ -1,0 +1,265 @@
+/* --- Legend:
+Colours:
+#36A4FF - Deep Blue (fifth);
+#34EBC9 - Aqua (quatrary);
+#35CC4C - Turqoise (secondary);
+#478F31 - Fresh Green (primary);
+#C5D938 - Yellow (accent);
+
+Fonts:
+Titling:
+    font-family: 'Merriweather', serif;
+Body:
+    font-family: 'Lato', sans-serif;
+
+Fonts Import: */;
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700|Merriweather:400,700,700i&display=swap');
+
+/* --- Universal Styles --- */
+/* -- Font Styles (General) -- */
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: #fff;
+}
+body strong {
+	font-weight: 700;
+}
+
+/* - Headings -*/
+h1, h2 {
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1rem;
+	margin-top: 0px;
+}
+h2 {
+	font-size: 1rem;
+	margin-top: 10px;
+}
+/* - Body Text - */
+p {
+	font-size: 0.75rem;
+	line-height: 1.4rem;
+}
+/* - NAV - */
+nav ul li a {
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
+	font-size: 1rem;
+}
+nav ul li a:hover {
+	color: rgba(255,255,255,0.5);
+}
+/* - List Style - */
+ul {
+	list-style: none;
+}
+/* - Hyperlink Style - */
+a {
+	color: #;
+	text-decoration: none;
+}
+a:link {
+	cursor: default;
+}
+a:hover {
+	color: #fff;
+}
+
+/* --- Specific Styles --- */
+/* -- Body -- */
+body {
+	background-color: #C5D938;
+}
+/* -- Header -- */
+header {
+	background-size: auto;
+	margin: 0;
+	text-align: center;
+}
+.masthead {
+	display: inline;
+	width: 100%;
+	margin: auto;
+}
+.masthead br {
+	margin-bottom: 30px;
+}
+.tagline {
+	float: left;
+	font-weight: 400;
+	font-size: 2rem;
+}
+.logo {
+	float: left;
+	background-size: 30px 30px;
+	padding-right: 10px;
+	padding-left: 20px;
+	width: 40px;
+}
+nav {
+	background-color: #478F31;
+	text-align: center;
+}
+nav ul li a {
+	color: #fff;
+}
+nav ul li {
+	padding-bottom: 2px;
+}
+nav ul li:nth-child(1n) {
+	padding-top: 2px;
+}
+/* -- Box -- */
+#main-box {
+	width: 90%;
+	margin: auto;
+}
+/* -- Buttons -- */
+button {
+	float: left;
+	width: 30%;
+	font-family: 'Lato', sans-serif;
+	height: 40px;
+	background-color: #3FCC96;
+	padding-top: 0;
+	margin: 0 2.5px;
+	border: none;
+}
+button:hover {
+	opacity: 75%;
+}
+#active {
+	font-weight: 700;
+}
+/* -- Main Container -- */
+.container {
+	display: block;
+	width: 90%;
+	margin: auto;
+}
+.container h1, .container h2, .container p {
+	text-align: center;
+}
+.container img {
+	margin: auto;
+	align-content: center;
+}
+.container h2 {
+	float: left;
+	font-size: 1.25rem;
+	text-align: center;
+	margin: 10px auto;
+	width: 100%;
+}
+.container p {
+	max-width: 350px
+}
+.clearfix {
+	overflow: auto;
+	display: inline;
+}
+/* -- Footer -- */
+footer {
+	background-color: #478F31;
+	margin: 30px auto;
+	text-align: center;
+	font-size: .75rem;
+}
+#footer-box {
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+footer img {
+	float: left;
+	width: 40px;
+	padding: 0 30px;
+}
+footer a img:hover {
+	opacity: 75%;
+}
+/* --- Media Queries --- */
+/* -- Tablet -- */
+@media (min-width: 700px) {
+	.tagline {
+		font-size: 3rem;
+		margin-bottom: 0;
+	}
+	header .logo {
+		float: left;
+		height: 120px;
+		width: auto;
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-left: 0px;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	nav {
+		display: block;
+		width: 100%;
+		margin-left: -20px;
+		padding: 0;
+	}
+	nav ul li a {
+		color: #fff;
+		font-size: 1.5rem;
+	}
+	nav ul li {
+		background-color: #478F31;
+		display: block;
+		float: left;
+		width: 20%;
+		padding: 10px 0 10px 0;
+		text-align: center;
+		font-size: 2em;
+	}
+	.container h2, .container p {
+		text-align: left;
+	}
+	.container h2 {
+		font-size: 2rem;
+		padding-top: 10px;
+	}
+	.container p {
+		font-size: 1rem;
+	}
+	.container img {
+		float: right;
+	}
+	.box button {
+		display: inline;
+		width: 120px;
+	} 
+	footer {
+		display: inline;
+		float: none;
+	}
+	footer a img {
+		width: 40px;
+		height: auto;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+}
+/* -- Desktop -- */
+@media (min-width: 1000px) {
+	header .tagline {
+		font-size: 3.3rem;
+	}
+	header .logo {
+		height: 140px;
+	}
+	.box button {
+		height: 60px;
+		width: 250px;
+		font-size: 1rem;
+	}
+	.container p {
+	max-width: 700px
+	}
+}
